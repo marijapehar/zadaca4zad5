@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <title>JS osnove</title>
+</head>
+<body>
+  <script type="text/javascript">
+	document.write("<hr/>");
+	document.write("Zadatak 5 rezultat: <br/>");
+	
+	var n = parseInt(prompt("Unesite broj n:"));
+    if (!isNaN(n) && n > 0) {
+      var suma = 0;
+
+      for (var i = 1; i <= n; i++) {
+        suma += i;
+      }
+      var aritmetickaSredina = suma / n;
+      document.write("Aritmetička sredina brojeva od 1 do " + n + " je: " + aritmetickaSredina.toFixed(2));
+      console.log("Aritmetička sredina: " + aritmetickaSredina);
+    } else {
+      document.write("Unos nije ispravan.");
+    }
+  </script>
+</body>
+</html>
